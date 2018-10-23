@@ -1,0 +1,1 @@
+df -P | awk 'BEGIN{sum=0; num=0}{if(NR==1)next; else sum=sum+$3; num = num + $4}END{print sum/num}'
